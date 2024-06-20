@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --hue: 194;
+    --text-color: #303030;
+    --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+#app {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.sr-only {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: #F8FFFF;
+}
+
+body * {
+    font-family: var(--ff-primary);
+}
+
+th, .add-btn {
+    background-color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height: 3.2rem;
+    border: 1px solid #CCC;
+    padding: 0 .8rem;
+    border-radius: .4rem 0 0 .4rem;
+}
+
+.add-btn {
+    border-radius: 0 .4rem .4rem 0;
+    height: 3.2rem;
+    border: 0;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #3ab7dd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+table th {
+    text-align: left;
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+table tr {
+    background-color: #EEE;
+}
+
+table tr:nth-child(odd) {
+    background-color: #DDD;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: 700;
+}
+
+.remove {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
